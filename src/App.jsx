@@ -48,7 +48,7 @@ function App() {
         </button>
       </div>
 
-      {error && <p className="text-red-300">{error}</p>}
+      {error && <p className="text-red-800">{error}</p>}
 
       {weather && (
         <div className=" text-white from-black-600 mb-10 p-8 text-center w-80 ">
@@ -57,7 +57,7 @@ function App() {
             Temperature: {weather.current.temperature}°C
           </p>
           <p>Pressure:{weather.current.pressure}</p>
-          <p> Wind:{weather.current.wind}</p>
+        
           <p className="capitalize">
             {weather.current.weather_descriptions[0]}
           </p>
